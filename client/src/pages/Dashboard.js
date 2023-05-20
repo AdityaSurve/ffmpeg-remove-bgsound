@@ -71,13 +71,13 @@ const Dashboard = () => {
             )}
           </div>
           <div
-            className=" h-[100%] flex justify-center items-center p-10 bg-slate-600 rounded-3xl"
+            className=" h-[100%] flex justify-center items-center p-10 bg-sky-900 rounded-3xl"
             style={{ flex: 2 }}
           >
             {!videoURL && <img src={BannerImg} alt="" className="h-[70%] " />}
             {videoURL && (
               <div className="flex flex-col gap-5 justify-center items-center">
-                <span className="text-gray-300 text-lg">PREVIEW</span>
+                <span className="text-gray-300 text-lg font-bold">PREVIEW</span>
                 <video src={videoURL} controls className="h-[70%] rounded-md" />
                 <div className="flex items-center bg-sky-700 hover:bg-sky-800 px-5 py-3 rounded-xl mt-3 cursor-pointer max-w-min">
                   {!process && (
